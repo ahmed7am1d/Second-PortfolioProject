@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Al-Doori</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS-FOLDER/master.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- the purpose of the container is to set something like margin and to put all of our links in one div -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a href="#" class="navbar-brand">
+            <img src="Images/21004063-removebg-preview.png" width="80px" height="80px">
+            Al-Doori
+            
+        </a>
+
+        <!-- Humberger button that is linked to our navigation links using id -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
+            <!-- Inside button we will add the = button -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <!-- When screen is small collapse all the navigation into burger -->
+        <div class="collapse navbar-collapse" id="navmenu">
+            <!-- ms-auto to move ul to the right of page -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#aboutMe" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#question" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myworks" class="nav-link">My Work</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <!-- we need everything in container and in the middle as navbar -->
+        <div class="container">
+            <!-- Flex box(inside two childs image and text) 
+                 d-sm-flex it becomes flex only and if screen is bigger than small-->
+            <div class="d-sm-flex justify-content-between">
+                <div >
+                    <h1> <span class="text-danger"> Software Engineer</span> Student</h1>
+                    <p class="lead" my-4>It is Ahmed!<br> I am a Software Engineering Student in his 3th stage of bachelors Degree</p>
+                    <button class="btn btn-danger btn-lg">Email Me</button>
+                </div>
+                <!-- class="img-fluid" => for making image responsive or same size as container -->
+                <img class="niceimg img-fluid w-50 d-none d-sm-block" src="/Images/undraw_programming_re_kg9v.svg"  alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- 1- Welcome Page -->
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
